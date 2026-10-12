@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banzum</title>
+<meta name="description" content="Banzum: corrida de barco pelos rios da Amazônia, com as lendas do Norte.">
+<link rel="icon" href="img/icone.png">
+<style>
+@font-face { font-family: "Ultra"; src: url("fontes/Ultra-Regular.ttf") format("truetype"); font-display: swap; }
+:root { --casco: #0f5566; --casco2: #0b4250; --faixa: #f2c14e; --contorno: #3a1d0f; --letreiro: #c8372a; --tinta: #f7f0e1; --rio: #9a6b45; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--casco); color: var(--tinta); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 18px; line-height: 1.55; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; display: grid; gap: 24px; justify-items: center; text-align: center; }
+h1 { margin: 0; font-family: "Ultra", Georgia, serif; font-weight: 400; font-size: clamp(56px, 16vw, 112px); line-height: 1; color: var(--faixa);
+  -webkit-text-stroke: 3px var(--contorno); text-shadow: 5px 6px 0 var(--letreiro); letter-spacing: 1px; }
+.foto { width: min(320px, 80vw); aspect-ratio: 1; border-radius: 50%; border: 6px solid var(--faixa); display: block; }
+p { margin: 0; max-width: 34em; }
+.em-breve { display: inline-block; padding: 6px 16px; border-radius: 99px; background: var(--faixa); color: var(--contorno); font-weight: 700; }
+footer { font-size: 14px; color: #c6dbd6; }
+a { color: var(--faixa); }
+.rio { height: 64px; background: repeating-linear-gradient(90deg, var(--rio) 0 60px, #8a5d3a 60px 120px); }
+</style>
+</head>
+<body>
+<main>
+  <h1>BANZUM</h1>
+  <img class="foto" src="img/curupira.jpg" alt="O Curupira pilotando um barco em forma de chinelo, cortando um rio barrento da Amazônia">
+  <p>Corrida de barco pelos rios da Amazônia, com as lendas do Norte: Curupira, Iara, Boto, Matinta Perera, Mapinguari, Mulher-Cobra, Caipora e Boi-bumbá.</p>
+  <p>Porto Velho, Rio Branco e Manaus, com a correnteza, as quedas e os marcos de cada cidade.</p>
+  <p><span class="em-breve">Em breve no Android</span></p>
+  <footer>Grátis, sem anúncios e sem compras. Contato: banzumjogo@gmail.com</footer>
+</main>
+<div class="rio" aria-hidden="true"></div>
+</body>
+</html>
